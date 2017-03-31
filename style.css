@@ -36,3 +36,7 @@ div {
   flex-direction: both;
   height: 40vh;
 }
+
+#menu_img {
+  display: none;
+}
