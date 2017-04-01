@@ -39,4 +39,5 @@ div {
 
 #menu_img {
   display: none;
+  width: inherit;
 }

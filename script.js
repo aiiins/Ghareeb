@@ -1,4 +1,5 @@
 // show/hide menu
+"use strict"
 var button = document.getElementById("john");
 
 button.onclick = function() {
@@ -9,5 +10,3 @@ button.onclick = function() {
     menu.style.display = "none"
   }
 }
-
-// needs to be resversed
