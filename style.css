@@ -1,75 +1,74 @@
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: #FDE6AD;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1em;
-	color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FDE6AD;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    color: black;
 }
 
 div {
-  width: inherit;
+    width: inherit;
 }
 
 #top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#contact {  
-  display: flex;
-  align-items: center;
-  
-  background-color: #F8E87A;
-  height: 60vh;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+#contact {
+    background-color: #F8E87A;
+    height: 60vh;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+p {
+    display: block;
+}
 
+button {
+    display: block;
+    background-color: red;
+    border: 0px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover {
+    height: 35px;
+    width: 130px;
+}
 
 #menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: both;
-  height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: both;
+    height: 20vh;
 }
 
-/*
-*   These compile #menu_img w/ the styles below based on page resolution
-*   If screen min-width is 480px then it a big window
-*/
-@media screen and (min-width: 480px)
-{
-  #menu_img 
-  {
-    display: none;
-    justify-content: center;
-     
-    position: absolute;        
-    top: 500px;  
-  }
-}
-
-@media screen and (max-width: 480px)
-{
-  #menu_img 
-  {
-    display: none;
-    justify-content: center;
-    width: 100%;
+#menu-img-box {
+    background-color: red;
     height: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 
-    overflow: auto; 
-    resize: both;
-    
-    position: absolute;        
-    top: 500px;  
-  }
+#menu_img {
+    width: inherit;
+    max-width: 1000px;
 }
