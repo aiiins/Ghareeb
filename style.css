@@ -20,14 +20,18 @@ div {
   justify-content: center;
 }
 
-#contact {
+#contact {  
+  display: flex;
+  align-items: center;
+  
   background-color: #F8E87A;
-  height: 20vh;
-  padding: 3em;
+  height: 60vh;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
+
 
 #menu {
   display: flex;
@@ -37,6 +41,35 @@ div {
   height: 40vh;
 }
 
-#menu_img {
-  display: none;
+/*
+*   These compile #menu_img w/ the styles below based on page resolution
+*   If screen min-width is 480px then it a big window
+*/
+@media screen and (min-width: 480px)
+{
+  #menu_img 
+  {
+    display: none;
+    justify-content: center;
+     
+    position: absolute;        
+    top: 500px;  
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  #menu_img 
+  {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    overflow: auto; 
+    resize: both;
+    
+    position: absolute;        
+    top: 500px;  
+  }
 }
